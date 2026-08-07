@@ -1,0 +1,62 @@
+I got a bounce-back email and I think it has one of those codes you deal with - 550 5.7.26. I copied the headers of the bounce message like I do for suspicious mail checks. Here's everything I copied:
+
+Received: from DU4PR07MB10516.eurprd07.prod.outlook.com (2603:10a6:10:5cc::16)
+ by PAWPR07MB9537.eurprd07.prod.outlook.com with HTTPS; Wed, 1 Jul 2026
+ 04:15:33 +0000
+Received: from AS4P251CA0014.EURP251.PROD.OUTLOOK.COM (2603:10a6:20b:5d2::14)
+ by DU4PR07MB10516.eurprd07.prod.outlook.com (2603:10a6:10:5cc::16) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.159.12; Wed, 1 Jul
+ 2026 04:15:16 +0000
+Received: from AM4PEPF00025F98.EURPRD83.prod.outlook.com
+ (2603:10a6:20b:5d2:cafe::5d) by AS4P251CA0014.outlook.office365.com
+ (2603:10a6:20b:5d2::14) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.181.8 via Frontend Transport; Wed, 1
+ Jul 2026 04:15:15 +0000
+Authentication-Results: spf=none (sender IP is 203.0.113.41)
+ smtp.helo=mail.voip-provider.example; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=mail.voip-provider.example;compauth=pass
+ reason=105
+Received-SPF: None (protection.outlook.com: mail.voip-provider.example does not designate
+ permitted sender hosts)
+Received: from mail.voip-provider.example (203.0.113.41) by
+ AM4PEPF00025F98.mail.protection.outlook.com (10.167.16.7) with Microsoft SMTP
+ Server id 15.21.202.0 via Frontend Transport; Wed, 1 Jul 2026 04:15:15 +0000
+Received: by mail.voip-provider.example (Postfix)
+	id 8DFFC801D246; Wed,  1 Jul 2026 05:15:15 +0100 (IST)
+Date: Wed,  1 Jul 2026 05:15:15 +0100 (IST)
+From: MAILER-DAEMON@mail.voip-provider.example (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: colm.whelan@rockfieldit.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="2B08D801D532.1782879315/mail.voip-provider.example"
+Content-Transfer-Encoding: 8bit
+Message-Id: <20260701041515.8DFFC801D246@mail.voip-provider.example>
+Return-Path: <>
+X-MS-Exchange-Organization-SCL: 1
+X-Forefront-Antispam-Report:
+ CIP:203.0.113.41;CTRY:IE;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail.voip-provider.example;PTR:mail.voip-provider.example;CAT:NONE;SFTY:9.25;DIR:INB;SFTY:9.25;
+X-MS-Exchange-ExternalInOutlookResult: IsExternal
+
+(there was a load more X-Microsoft gibberish after that which I've cut off)
+
+This is the mail system at host mail.voip-provider.example.
+
+I'm sorry to have to inform you that your message could not be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can delete your own text from the attached returned message.
+
+                   The mail system
+
+<recipient@masked-recipient.example>: host aspmx.l.google.com[172.217.76.27] said:
+    550-5.7.26 Unauthenticated email from rockfieldit.com is not accepted due
+    to 550-5.7.26 domain's DMARC policy. Please contact the administrator of
+    550-5.7.26 rockfieldit.com domain if this was a legitimate mail. To learn
+    about 550-5.7.26 the DMARC initiative, go to 550 5.7.26
+    https://support.google.com/mail/?p=DmarcRejection
+    ffacd0b85a97d-47569915a58si8626791f8f.479 - gsmtp (in reply to end of DATA
+    command)
