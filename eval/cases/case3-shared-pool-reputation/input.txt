@@ -1,0 +1,53 @@
+
+I look after communications for a community trust (we're a charity). Our
+monthly update goes to about 4,200 supporters through the campaigns feature
+built into our donor-management platform. We did the domain authentication
+setup properly last year when the platform told everyone to. Since last
+Tuesday the update is going to spam in Gmail - I checked in my own account and
+in two colleagues' accounts, same thing. Our complaint rate in the platform
+dashboard shows 0.02% and hard bounces 0.4%. Oddly, I was at a sector meetup
+on Thursday and the comms person from another charity - completely different
+organisation, but they use the same donor platform - said their newsletter
+went to spam this week too.
+
+Here's the Show original from my own Gmail copy:
+
+Delivered-To: mairead.trustcomms@gmail.com
+Return-Path: <bounces+8412976-e3fa-mairead=stbrigidstrust.ie@em4821.stbrigidstrust.ie>
+Received: from o1.em4821.stbrigidstrust.ie (o1.em4821.stbrigidstrust.ie. [149.72.123.24])
+        by mx.google.com with ESMTPS id k9-20020a170903071x00b001fc1e2a9b55si2214981plt.98.2026.07.28.10.17.42
+        for <mairead.trustcomms@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 28 Jul 2026 10:17:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces+8412976-e3fa-mairead=stbrigidstrust.ie@em4821.stbrigidstrust.ie designates 149.72.123.24 as permitted sender) client-ip=149.72.123.24;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@stbrigidstrust.ie header.s=s1 header.b=R7mK2pQ9;
+       dkim=pass header.i=@sendgrid.info header.s=smtpapi header.b=T4nL8rV2;
+       spf=pass (google.com: domain of bounces+8412976-e3fa-mairead=stbrigidstrust.ie@em4821.stbrigidstrust.ie designates 149.72.123.24 as permitted sender) smtp.mailfrom="bounces+8412976-e3fa-mairead=stbrigidstrust.ie@em4821.stbrigidstrust.ie";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=stbrigidstrust.ie
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=stbrigidstrust.ie;
+        s=s1; t=1785259060;
+        h=content-type:from:mime-version:subject:list-unsubscribe:to;
+        bh=P2wY6zA0bC4dE8fG2hI6jK0lM4nO8pQ2rS6tU0vW4x=; b=R7mK2pQ9sT1uV3wX5y
+From: St Brigid's Community Trust <news@stbrigidstrust.ie>
+To: mairead.trustcomms@gmail.com
+Subject: July update: summer programme photos + a small ask
+Date: Tue, 28 Jul 2026 17:17:40 +0000 (UTC)
+Message-ID: <mQ4rT8vX2zB6dF0hJ4lN8pR2tV6xZ0b@geopod-ismtpd-14>
+List-Unsubscribe: <https://u8412976.ct.sendgrid.net/wf/unsubscribe?upn=x7Kp2mQ9>, <mailto:unsubscribe@stbrigidstrust.ie>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-SG-EID: qP8rT2vX6zB0dF4hJ8lN2pR6tV0xZ4bC8eG2iK6mO0qS4uW8y
+X-SG-ID: mS6uW0yA4cE8gI2kM6oQ0sU4wY8aC2eG6iK0mO4qS8uW2yA6c
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----sinikael-?=_1-17852590601"
+
+And because our IT volunteer suggested it, I put the sending address
+149.72.123.24 into that MXToolbox website. It says:
+
+  LISTED - Spamhaus ZEN (CSS) - 149.72.123.24 was listed
+  Reason: CSS listings are for IP addresses observed sending low-reputation email.
+  All other blacklists: OK (Barracuda OK, SORBS OK, SpamCop OK)
+
+The only thing we've changed recently is we typed in about 800 new email
+addresses in June from the paper sign-up sheets we collect at our community
+events. Could that be it? Did we poison our own list?

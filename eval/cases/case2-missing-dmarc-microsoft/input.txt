@@ -1,0 +1,47 @@
+
+We're a recruitment agency and we do outbound email to hiring managers -
+roughly 6,000-7,000 emails a day across our sending accounts, through Smartlead.
+Everything was fine until Monday morning, when suddenly a huge chunk of our
+sends started bouncing back. It looks like it's mostly the corporate targets
+and anyone on Hotmail/Outlook addresses. Our IT guy set up SPF for us years
+ago so it can't be an authentication thing. Did we get blacklisted?
+
+Here's one of the bounces, they all look the same:
+
+From: postmaster@mail.hotmail.com
+To: ciara@reachfirst-talent.com
+Subject: Undeliverable: Quick question about your Q3 engineering hires
+
+Delivery has failed to these recipients or groups:
+
+d.osullivan@hotmail.com
+Your message wasn't delivered because the recipient's email provider rejected it.
+
+
+Diagnostic information for administrators:
+
+Generating server: DB8PR06MB5814.eurprd06.prod.outlook.com
+Receiving server: hotmail-com.olc.protection.outlook.com
+
+d.osullivan@hotmail.com
+Remote server returned '550 5.7.515 Access denied, sending domain
+reachfirst-talent.com does not meet the required authentication level.
+For more information please go to https://go.microsoft.com/fwlink/?linkid=2210175
+[BL02EPF0001A106.mail.protection.outlook.com 2026-08-03T08:41:52.118Z]'
+
+Original message headers:
+
+Received: from mail-sor-f41.smartlead-relay.net (203.0.113.41) by
+ hotmail-com.olc.protection.outlook.com (10.13.7.219) with Microsoft SMTP
+ Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.7452.19;
+ Mon, 3 Aug 2026 08:41:52 +0000
+From: Ciara Brennan <ciara@reachfirst-talent.com>
+To: <d.osullivan@hotmail.com>
+Subject: Quick question about your Q3 engineering hires
+Date: Mon, 3 Aug 2026 09:41:49 +0100
+Message-ID: <CAJx7=qKm2rWvNpL8fT4hY6uZ0aB2cD4eF6gH8iJ0kL2mN4oP6q@reachfirst-talent.com>
+
+For what it's worth our main website domain is reachfirsttalent.ie and email
+to clients from that domain is working normally - it's just the outreach that's
+dying. The outreach domain reachfirst-talent.com was set up separately about
+two years ago so the main domain wouldn't get hurt by cold email.

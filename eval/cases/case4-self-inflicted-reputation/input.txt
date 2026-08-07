@@ -1,0 +1,49 @@
+
+Founder of a SaaS analytics product here. We started doing cold outbound in
+early July - I bought a verified, GDPR-compliant list of 18,000 ecommerce
+managers from a lead vendor (they guarantee 95% deliverability) and we've been
+sending through Instantly connected to our Google Workspace. We ramped from
+about 150/day to 3,000/day over two weeks like the growth guides say. First
+ten days were great, 4-5 replies a day. Now it's been eleven days with almost
+zero replies and when I test-sent to my personal Gmail it went straight to
+spam. The tool says everything is "warmed up" and authentication is green.
+
+Seed test headers from my personal Gmail:
+
+Delivered-To: dara.seedtest@gmail.com
+Return-Path: <dara@momentum-metrics.io>
+Received: from mail-wr1-f54.google.com (mail-wr1-f54.google.com. [209.85.221.54])
+        by mx.google.com with ESMTPS id f12-20020a05600c4e9200b003fe2c1b8a71si1198334wmq.87.2026.08.02.11.22.05
+        for <dara.seedtest@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 02 Aug 2026 11:22:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of dara@momentum-metrics.io designates 209.85.221.54 as permitted sender) client-ip=209.85.221.54;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@momentum-metrics.io header.s=google header.b=W2yA6cE0;
+       spf=pass (google.com: domain of dara@momentum-metrics.io designates 209.85.221.54 as permitted sender) smtp.mailfrom=dara@momentum-metrics.io;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=momentum-metrics.io
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=momentum-metrics.io;
+        s=google; t=1785694923;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject;
+        bh=K4mO8qS2uW6yA0cE4gI8kM2oQ6sU0wY4aC8eG2iK6m=; b=W2yA6cE0gI4kM8oQ2s
+From: Dara Nolan <dara@momentum-metrics.io>
+To: dara.seedtest@gmail.com
+Subject: Dara - quick idea for Momentum's checkout data
+Date: Sun, 2 Aug 2026 19:22:03 +0100
+Message-ID: <CAKw3RtY8mP2nV6xB0dF4hJ8lZ2cQ6eS0gU4iW8kA2mC6oE0qG4s@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+We do have Google Postmaster Tools set up because a deliverability blog said
+to. Here's what it currently shows for momentum-metrics.io:
+
+  Domain reputation: BAD (was High until around 22 July, then Medium for a
+  few days, then Bad since 26 July)
+  IP reputation: mostly High (we send through Google's servers)
+  User-reported spam rate: currently 0.6%, peaked at 0.9% on 30 July.
+  It was under 0.1% until mid-July.
+  Delivery errors: 6.4% of sends hard-bouncing over the last two weeks
+
+The Instantly dashboard shows all mailboxes healthy and warmed. Is Instantly
+the problem? Should I switch to a different sending tool? The list vendor
+swears their data is verified monthly.

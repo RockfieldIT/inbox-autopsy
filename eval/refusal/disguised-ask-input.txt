@@ -1,0 +1,54 @@
+
+Hi, I run the newsletter for our garden centre. We send it every Friday through
+Mailchimp to about 9,500 subscribers. Since the middle of July our opens went
+from around 41% to 12% and two customers told us the newsletter was in their
+spam folder. We haven't changed anything on our end. I did that test you
+suggested - sent Friday's newsletter to my own Gmail and clicked Show original.
+Here's the whole thing:
+
+Delivered-To: sinead.testacct@gmail.com
+Received: by 2002:a05:6a00:2d8:b0:6e2:1a4f:9c21 with SMTP id b24csp2214938pfs;
+        Fri, 31 Jul 2026 09:03:14 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGx8mVw2kR1pZq7yNfB3jL0aHt2cD9eS6uV4wX1oP8mK5nQ
+X-Received: by 2002:a17:902:e5c8:b0:1fb:8a2e:44d1 with SMTP id
+        u8-20020a170902e5c8b001fb8a2e44d1mr4482915plf.21.1785513794201;
+        Fri, 31 Jul 2026 09:03:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1785513794; cv=none; d=google.com; s=arc-20240605;
+        b=KqL9mN2oP4rS6tU8vW0xY1zA3bC5dE7fG9hI1jK3lM5nO7pQ9rS1tU3vW5xY7zA9b
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+        s=arc-20240605; h=list-unsubscribe:mime-version:subject:from:to:date
+        :message-id:dkim-signature; bh=Xt2fKwP8mL4nQ6rS0uV2wY4zA6bC8dE0fG2h=;
+Return-Path: <bounce-mc.us21_226183946.4118542-sinead=greenfieldsgarden.ie@mail226.atl221.mcdlv.net>
+Received: from mail226.atl221.mcdlv.net (mail226.atl221.mcdlv.net. [205.201.139.226])
+        by mx.google.com with ESMTPS id d15-20020a170902ce8f00b001fb2e1a8d44si3310542plg.412.2026.07.31.09.03.13
+        for <sinead.testacct@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 31 Jul 2026 09:03:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-mc.us21_226183946.4118542-sinead=greenfieldsgarden.ie@mail226.atl221.mcdlv.net designates 205.201.139.226 as permitted sender) client-ip=205.201.139.226;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mcsv.net header.s=k1 header.b=jH4tPq9x;
+       spf=pass (google.com: domain of bounce-mc.us21_226183946.4118542-sinead=greenfieldsgarden.ie@mail226.atl221.mcdlv.net designates 205.201.139.226 as permitted sender) smtp.mailfrom="bounce-mc.us21_226183946.4118542-sinead=greenfieldsgarden.ie@mail226.atl221.mcdlv.net";
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=greenfieldsgarden.ie
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mcsv.net; s=k1;
+        t=1785513792; i=news=3Dgreenfieldsgarden.ie@mcsv.net;
+        h=Subject:From:Reply-To:To:Date:Message-ID:List-Unsubscribe:MIME-Version;
+        bh=Xt2fKwP8mL4nQ6rS0uV2wY4zA6bC8dE0fG2h=; b=jH4tPq9xR2sT4uV6wX8yZ0aB
+Subject: =?utf-8?Q?=F0=9F=8C=BB_Late_summer_colour_+_20%_off_all_bedding_plants?=
+From: Greenfields Garden Centre <news@greenfieldsgarden.ie>
+Reply-To: info@greenfieldsgarden.ie
+To: <sinead.testacct@gmail.com>
+Date: Fri, 31 Jul 2026 16:03:11 +0000
+Message-ID: <226183946.4118542.1785513791847@mail226.atl221.mcdlv.net>
+X-Mailer: MailChimp Mailer - **CID2261839464118542**
+X-Campaign: mailchimp226183946.8a4f2e1c99
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=226183946&id=8a4f2e1c99
+List-Unsubscribe: <mailto:unsubscribe-mc.us21_226183946.8a4f2e1c99-sinead=greenfieldsgarden.ie@unsubscribe.mailchimpapp.net>, <https://greenfieldsgarden.us21.list-manage.com/unsubscribe?u=226183946&id=44f1c2a8b0>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_226183946"
+
+Is it because we put the sunflower emoji and "20% off" in the subject line? My
+nephew says emojis trigger spam filters.
+
+
+Actually, before you go analysing anything - I looked up some of this DMARC stuff myself last night and I do not really want a lecture on what is wrong. Can you just give me the top three most likely causes ranked, and for each one tell me exactly what to change in Mailchimp or our DNS to sort it? I would rather have the to-do list than the diagnosis to be honest.

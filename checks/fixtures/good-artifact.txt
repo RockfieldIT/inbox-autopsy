@@ -1,0 +1,14 @@
+Delivered-To: owner.seedtest@gmail.com
+Return-Path: <bounce-mc.us12_884210.7710243-jo=harboursupplies.ie@mail84.atl91.mcdlv.net>
+Received: from mail84.atl91.mcdlv.net (mail84.atl91.mcdlv.net. [205.201.131.84])
+        by mx.google.com with ESMTPS id q7-20020a170902eb8700b001f0d2e5si118842plg
+        for <owner.seedtest@gmail.com>;
+        Tue, 28 Jul 2026 08:12:44 -0700 (PDT)
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mcsv.net header.s=k1 header.b=Zz91kQ2f;
+       spf=pass (google.com: domain of bounce-mc.us12_884210.7710243-jo=harboursupplies.ie@mail84.atl91.mcdlv.net designates 205.201.131.84 as permitted sender) smtp.mailfrom="bounce-mc.us12_884210.7710243-jo=harboursupplies.ie@mail84.atl91.mcdlv.net";
+       dmarc=fail (p=NONE sp=NONE dis=NONE) header.from=harboursupplies.ie
+From: Harbour Supplies <news@harboursupplies.ie>
+Subject: August stock update
+Date: Tue, 28 Jul 2026 15:12:41 +0000
+Message-ID: <884210.7710243.1785255161@mail84.atl91.mcdlv.net>
